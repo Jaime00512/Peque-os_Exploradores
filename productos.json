@@ -53,7 +53,7 @@
       "nombre": "Zapatos Escolares",
       "descripcion": "Zapatos cómodos y resistentes para las actividades del jardín.",
       "precio": 55.00,
-      "stock": 15,
+      "stock": 50,
       "imagen": "img/zpatos.jpg"
     }
   ]
