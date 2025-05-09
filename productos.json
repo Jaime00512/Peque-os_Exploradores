@@ -1,0 +1,60 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Uniforme Escolar",
+      "descripcion": "Uniforme completo, cómodo y duradero para las actividades diarias del jardín.",
+      "precio": 20.00,
+      "stock": 50,
+      "imagen": "img/uniforme.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Mochila Escolar",
+      "descripcion": "Mochila resistente con espacio para libros, útiles y más.",
+      "precio": 40.00,
+      "stock": 30,
+      "imagen": "img/mochila.jpeg"
+    },
+    {
+      "id": 3,
+      "nombre": "Libro de Actividades",
+      "descripcion": "Libro con actividades educativas para niños del jardín.",
+      "precio": 15.00,
+      "stock": 100,
+      "imagen": "img/libro.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Set de Pintura",
+      "descripcion": "Set completo de pintura con pinceles, acuarelas y hojas.",
+      "precio": 10.00,
+      "stock": 25,
+      "imagen": "img/pinturas.avif"
+    },
+    {
+      "id": 5,
+      "nombre": "Juguetes Didácticos",
+      "descripcion": "Juguetes que fomentan el aprendizaje y la creatividad de los niños.",
+      "precio": 18.00,
+      "stock": 20,
+      "imagen": "img/juguetes.png"
+    },
+    {
+      "id": 6,
+      "nombre": "Manta para Niños",
+      "descripcion": "Manta suave y calentita para las siestas del jardín.",
+      "precio": 32.00,
+      "stock": 30,
+      "imagen": "img/manta.webp"
+    },
+    {
+      "id": 7,
+      "nombre": "Zapatos Escolares",
+      "descripcion": "Zapatos cómodos y resistentes para las actividades del jardín.",
+      "precio": 55.00,
+      "stock": 15,
+      "imagen": "img/zpatos.jpg"
+    }
+  ]
+}

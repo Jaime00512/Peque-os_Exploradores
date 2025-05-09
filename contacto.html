@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pequeños Exploradores</title>
+  <!-- Bootstrap primero -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+
+  <!-- Tu CSS personalizado después -->
+  <link rel="stylesheet" href="css/contacto.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="icon" href="img/favicon.png" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Pequeños Exploradores</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav nav-links">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="sedes.html">Sedes</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <div class="text-center mb-5">
+      <h1 class="display-5">Contáctanos</h1>
+      <p class="lead">Estamos aquí para resolver tus dudas. ¡Hablemos!</p>
+    </div>
+
+    <!-- Información de Contacto -->
+    <section class="row mb-5">
+      <div class="col-md-6">
+        <h2 class="h4 mb-3">Información de Contacto</h2>
+        <p><strong>Dirección:</strong> Calle Principal 123, Ciudad</p>
+        <p><strong>Teléfono:</strong> (123) 456-7890</p>
+        <p><strong>Correo Electrónico:</strong> contacto@exploradores.com</p>
+        <p><strong>Horario:</strong> Lunes a Viernes, 8:00 am – 5:00 pm</p>
+
+        <div class="social-icons mt-4">
+          <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="col-md-6">
+        <h2 class="h4 mb-3">Formulario de Contacto</h2>
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="correo" required>
+          </div>
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono">
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Comentarios o Preguntas</label>
+            <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Mapa -->
+    <section>
+      <h2 class="h4 mb-3">Ubicación de la Sede Principal</h2>
+      <div id="mapa" class="mb-5 rounded shadow">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31221.978587826867!2d-77.11096107959746!3d-11.991977890388775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105ce5be34d1b91%3A0x20602fd3dd3489e5!2sNido%20Jard%C3%ADn%20Marianista!5e0!3m2!1ses!2spe!4v1746695317903!5m2!1ses!2spe" 
+          width="100%" 
+          height="400" 
+          style="border:0; border-radius: 15px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Información de Contacto -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold mb-3">Contacto</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt"></i> <strong>Dirección:</strong> Los Olivos, Lima, Perú</li>
+            <li><i class="bi bi-telephone"></i> <strong>Teléfono:</strong> +51 925 933 290</li>
+            <li><i class="bi bi-envelope"></i> <strong>Email:</strong> contacto@pequexplo.com</li>
+            <li><i class="bi bi-file-earmark-earbuds"></i> <strong><a href="libro-reclamaciones.html" class="text-white">Libro de Reclamaciones</a></strong></li>
+          </ul>
+        </div>
+  
+        <!-- Redes Sociales -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold mb-3">Síguenos</h5>
+          <div class="d-flex gap-3">
+            <a href="https://facebook.com" target="_blank" class="text-white fs-3"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank" class="text-white fs-3"><i class="bi bi-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" class="text-white fs-3"><i class="bi bi-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="text-white fs-3"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+  
+        <!-- Enlaces de Navegación -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold mb-3">Enlaces Rápidos</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-white">Inicio</a></li>
+            <li><a href="nosotros.html" class="text-white">Nosotros</a></li>
+            <li><a href="sedes.html" class="text-white">Sedes</a></li>
+            <li><a href="contacto.html" class="text-white">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Copyright -->
+      <div class="text-center mt-4">
+        <p class="mb-0">&copy; 2025 Pequeños Exploradores. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
