@@ -1,0 +1,235 @@
+/* Tipografía desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baloo 2', cursive;
+  background-color: var(--color-fondo);
+  color: var(--color-texto-principal);
+  line-height: 1.6;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #2d2d2d;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ff6f61;
+  }
+/* Estilos para el header */
+header {
+  background-color: #ffcb05;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Estilos generales para la sección Nosotros */
+.seccion-nosotros {
+  font-family: 'Arial', sans-serif;
+  color: var(--color-texto-principal);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-valor);
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Estilo para la sección de historia */
+.historia {
+  background-color: #f0f8ff;
+}
+
+.historia h2 {
+  color: var(--color-principal);
+}
+
+.historia p {
+  color: var(--color-texto-secundario);
+  font-style: italic;
+}
+
+/* Sección Misión y Visión */
+.mision-vision h2 {
+  color: var(--color-valor);
+}
+
+.mision-vision p {
+  font-size: 1.2rem;
+}
+
+/* Estilos para el equipo */
+.equipo {
+  background-color: var(--color-imagen);
+}
+
+.equipo .persona {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.equipo .persona:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.equipo .persona img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.equipo h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-valor);
+}
+
+.equipo p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.valores {
+    background-color: var(--color-imagen);
+    padding: 60px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .valores-titulo {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .valores-titulo h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, var(--color-principal), var(--color-secundario));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Contenedor de tarjetas de valores */
+  .valores .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* Tarjeta de cada valor */
+  .valor-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px var(--color-sombra);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    flex: 1 1 250px;
+    max-width: 280px;
+  }
+  
+  .valor-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px var(--color-sombra);
+  }
+  
+  .valor-item h3 {
+    font-size: 2rem;
+    color: var(--color-hover);
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .valor-item p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+    font-style: italic;
+  }
+  
+  .valor-item img {
+    max-width: 220px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .valor-item img:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .valor-item {
+    padding: 20px;
+  }
+
+  .valor-item h3 {
+    font-size: 1.6rem;
+  }
+
+  .valor-item p {
+    font-size: 0.9rem;
+  }
+
+  .valores h2 {
+    font-size: 2rem;
+  }
+
+  .valor-item img {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,147 @@
+/* Tipografía desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baloo 2', cursive;
+  background-color: var(--color-fondo);
+  color: var(--color-texto-principal);
+  line-height: 1.6;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #2d2d2d;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ff6f61;
+  }
+/* Estilos para el header */
+header {
+  background-color: #ffcb05;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+  
+  /* Encabezado principal */
+  h1.display-5 {
+    color: #ffffff;
+    background-color: #ff914d;
+    padding: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Subtítulos */
+  h2.h4 {
+    color: #390db3;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Texto informativo */
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Íconos de redes sociales */
+  .social-icons a {
+    font-size: 1.8rem;
+    margin-right: 15px;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+    color: #ff5e00;
+  }
+  
+  /* Estilo del formulario */
+  form {
+    background-color: #fff7e6;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-label {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  input.form-control,
+  textarea.form-control {
+    border-radius: 10px;
+    border: 1px solid #ffb84d;
+    transition: border 0.3s ease;
+  }
+  
+  input.form-control:focus,
+  textarea.form-control:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.4);
+  }
+  
+  /* Botón */
+  button.btn-primary {
+    background-color: #ff6600;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #e65c00;
+  }
+  
+  /* Mapa */
+  #mapa iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+    border: 4px solid #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  /* Responsive extra */
+  @media (max-width: 768px) {
+    h1.display-5 {
+      font-size: 2rem;
+    }
+  
+    .social-icons {
+      margin-bottom: 20px;
+    }
+  }
+  

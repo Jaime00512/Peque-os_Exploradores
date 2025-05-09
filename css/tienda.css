@@ -1,0 +1,215 @@
+/* Tipografía desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baloo 2', cursive;
+  background-color: var(--color-fondo);
+  color: var(--color-texto-principal);
+  line-height: 1.6;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #2d2d2d;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ff6f61;
+}
+
+/* Estilos para el header */
+header {
+  background-color: #ffcb05;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: #ff8a65;
+  border-color: #ff8a65;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #ff7043;
+  border-color: #ff7043;
+}
+
+/* Carrito */
+#cart-items {
+  background-color: #fff3e0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#cart-items li {
+  font-size: 16px;
+}
+
+/* Tabla del carrito */
+#cart-table {
+  animation: fadeIn 0.5s ease-in-out;
+  background-color: #fefefe;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#cart-table th, #cart-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+#cart-table th {
+  background-color: #ffddc1;
+  color: #333;
+  text-align: center;
+}
+
+#cart-table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#total-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Botón de eliminar */
+.remove-item-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-item-btn:hover {
+  background-color: #c82333;
+}
+
+/* Formulario */
+form input,
+form select {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+form label {
+  font-weight: 500;
+}
+
+#checkout-form {
+  animation: fadeIn 0.5s ease-in-out;
+  background-color: #fffaf0;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  margin-top: 20px;
+}
+
+/* Inputs y select animados */
+#checkout-form input, #checkout-form select {
+  transition: box-shadow 0.3s ease;
+}
+
+#checkout-form input:focus, #checkout-form select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Títulos del catálogo */
+section h5.card-title {
+  font-weight: 600;
+  color: #4e342e;
+}
+
+/* Animación de aparición suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Botón de acción */
+#proceed-to-checkout {
+  background-color: #28a745;
+  border-color: #28a745;
+  transition: background-color 0.3s ease;
+}
+
+#proceed-to-checkout:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+#thank-you-message {
+  max-width: 70rem;  /* Aumenta el ancho máximo de la tarjeta */
+  display: none;  /* Inicialmente está oculto */
+  text-align: center;  /* Centra el texto dentro de la tarjeta */
+  padding: 20px;
+  margin: 0 auto;  /* Centra horizontalmente */
+  display: flex;
+  justify-content: center;  /* Centra el contenido de la tarjeta */
+  align-items: center;  /* Centra verticalmente el contenido dentro de la tarjeta */
+  flex-direction: row;  /* Organiza el contenido de manera horizontal */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column; /* Los elementos dentro de la tarjeta están alineados verticalmente */
+  align-items: center;  /* Centra los elementos dentro del body de la tarjeta */
+}

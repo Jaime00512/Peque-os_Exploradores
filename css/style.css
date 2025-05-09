@@ -1,0 +1,338 @@
+/* Tipografía desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baloo 2', cursive;
+  background-color: #e7fafd;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #ffcb05;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.titulo-principal {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #3cf10e;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  animation: zoomIn 1s ease-in-out;
+}
+
+.display-4  {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #a310e7;
+}
+
+.descripcion-principal {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #a310e7;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Corregido rbga */
+  animation: zoomIn 1s ease-in-out;
+}
+
+/* Contenedor con grid */
+.contenido-grid {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.grid-texto {
+  max-width: 800px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.grid-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2d2d2d;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #2d2d2d;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ff6f61;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  padding: 3rem 2rem;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nuestras-ventajas {
+  background-color: #f8f9fa; /* Fondo claro */
+  border-radius: 100px 100px; /* Semicírculo arriba y abajo */
+  padding: 60px 20px;
+  margin: 60px auto;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave opcional */
+}
+
+
+.ventajas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.ventaja-item {
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #dd1212;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ventaja-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.ventaja-item .ventaja-icono {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 90%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ventaja-item:hover .ventaja-icono {
+  transform: scale(1.1);
+}
+
+.ventaja-item h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.ventaja-item p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #c03802; /* Mejor contraste con fondo rojo */
+  margin-top: 10px;
+}
+
+.mb-4 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #015a44;
+}
+
+/* Estilos del carrusel */
+.carousel-item {
+  height: 700px;
+  background-color: #0d76df;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.carousel-caption h5 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #eafa11;
+}
+
+.carousel-caption p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #bb1d08;
+}
+
+.admisiones-2025 {
+  background: linear-gradient(135deg, #f5e09c, #182848); /* Azul elegante */
+  border-radius: 20px;
+  padding: 40px 0;
+}
+
+.admisiones-2025 .card {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admisiones-2025 .card:hover {
+  transform: translateY(-10px); /* Efecto al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.admisiones-2025 .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.admisiones-2025 .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.admisiones-2025 .card-text {
+  color: #555;
+  font-size: 1rem;
+}
+
+.admisiones-2025 .btn {
+  background-color: #fdd835; /* Un color que contraste */
+  color: #333;
+  border-radius: 30px;
+}
+
+.admisiones-2025 .btn:hover {
+  background-color: #ff6f61; /* Efecto hover */
+  color: #fff;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 767px) {
+  .admisiones-2025 .card-img-top {
+    height: 180px;
+  }
+
+  .admisiones-2025 .card-body {
+    padding: 1.5rem;
+  }
+}
+
+
+
+footer {
+  background-color: #343a40;
+}
+
+footer h5 {
+  font-size: 1.25rem;
+  color: #fdd835; /* Color amarillo para resaltar títulos */
+}
+
+footer .list-unstyled li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+footer .list-unstyled li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+footer .list-unstyled li a:hover {
+  color: #fdd835; /* Efecto hover para enlaces */
+}
+
+footer .bi {
+  color: #fdd835;
+}
+
+footer .bi:hover {
+  color: #ff6f61; /* Efecto hover para iconos */
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .carousel-item {
+    height: 300px; /* Adaptación móvil */
+  }
+
+  .titulo-principal {
+    font-size: 2.5rem;
+  }
+}
